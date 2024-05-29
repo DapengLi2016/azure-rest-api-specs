@@ -3,8 +3,8 @@
     "Endpoint": "https://eastus.api.cognitive.microsoft.com/",
     "Ocp-Apim-Subscription-Key": "{API Key}",
     "api-version": "2024-05-20-preview",
-    "translation-id": "TranslateMyZhCNVideo",
-    "iteration-id": "TranslateMyZhCNVideo-ContentEditing-2",
+    "Translation-Id": "TranslateMyZhCNVideo",
+    "Iteration-Id": "TranslateMyZhCNVideo-ContentEditing-2",
     "Operation-Id": "Create-TranslateMyZhCNVideo-ContentEditing-2",
     "iteration": {
       "description": "Fix segment duration issue and update subtitle max char.",

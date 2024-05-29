@@ -3,8 +3,8 @@
     "Endpoint": "https://eastus.api.cognitive.microsoft.com/",
     "Ocp-Apim-Subscription-Key": "{API Key}",
     "api-version": "2024-05-20-preview",
-    "Operation-Id": "TranslateMyZhCNVideo-Delete",
-    "translation-id": "TranslateMyZhCNVideo"
+    "Header-Operation-Id": "TranslateMyZhCNVideo-Delete",
+    "Translation-Id": "TranslateMyZhCNVideo"
   },
   "responses": {
     "202": {

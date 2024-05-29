@@ -3,7 +3,7 @@
     "Endpoint": "https://eastus.api.cognitive.microsoft.com/",
     "Ocp-Apim-Subscription-Key": "{API Key}",
     "api-version": "2024-05-20-preview",
-    "translation-id": "TranslateMyZhCNVideo",
+    "Translation-Id": "TranslateMyZhCNVideo",
     "Operation-Id": "TranslateMyZhCNVideo-CreateFullTranslate",
     "translation": {
       "description": "Translate video from en-US to zh-CN.",
