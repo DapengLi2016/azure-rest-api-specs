@@ -326,6 +326,10 @@ model IterationInput {
   @added(ApiVersions.v2026_03_01)
   @doc("Managed identity client ID for user-assigned managed identity to push results to Azure storage blob, if not specified, API will use system-assigned managed identity. This property is only used when pushResultToAzureStorageBlobDirUrl is specified.")
   pushResultToAzureStorageBlobManagedIdentityClientId?: Guid;
+
+  @added(ApiVersions.v2026_03_01)
+  @doc("When this parameter is set to true, the service uses a higher-sample-rate 24 kHz prompt audio for voice prompting. If this parameter is not specified or is set to false, the service continues to use 16 kHz prompt audio by default, as it generally provides better overall synthesis quality.")
+  use24kPromptAudio?: boolean;
 }
 
 @added(ApiVersions.v2025_05_20)
