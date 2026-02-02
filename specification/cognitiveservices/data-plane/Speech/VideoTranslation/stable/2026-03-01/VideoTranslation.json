@@ -961,7 +961,7 @@
         "subtitleMaxCharCountPerSegment": {
           "type": "integer",
           "format": "int32",
-          "description": "Subtitle max display character count per segment, if not specified, it will inherit the value defined in the input of translation creation."
+          "description": "Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. Subtitle max display character count per segment, if not specified, it will inherit the value defined in the input of translation creation."
         },
         "exportSubtitleInVideo": {
           "type": "boolean",
@@ -1003,11 +1003,11 @@
         },
         "enableEmotionalPlatformVoice": {
           "$ref": "#/definitions/EnableEmotionalPlatformVoice",
-          "description": "This parameter specifies whether to enable emotion for platform voice. By default, the server determines whether to apply emotion based on the target locale to optimize quality. If not specified, the API will automatically decide whether to enable emotional expression on the server side."
+          "description": "Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. This parameter specifies whether to enable emotion for platform voice. By default, the server determines whether to apply emotion based on the target locale to optimize quality. If not specified, the API will automatically decide whether to enable emotional expression on the server side."
         },
         "adjustWebvttAlignment": {
           "type": "boolean",
-          "description": "Specify whether to adjust webvtt alignment according to the synthesized audio for the translated text, if not specified, the default value is false."
+          "description": "Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. Specify whether to adjust webvtt alignment according to the synthesized audio for the translated text, if not specified, the default value is true."
         },
         "exportAdjustedPromptAudioInWebvtt": {
           "type": "boolean",
@@ -1023,7 +1023,7 @@
         "adjustBackgroundVolumeMultiplier": {
           "type": "number",
           "format": "double",
-          "description": "Adjust the background volume based on the maximum volume with this multiplier factor. The value range is (0, 1], the suggested value is 0.6 if you want to adjust the background volume. If not specified, the original background audio volume will be kept unchanged.",
+          "description": "Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. Adjust the background volume based on the maximum volume with this multiplier factor. The value range is (0, 1], the suggested value is 0.6 if you want to adjust the background volume. If not specified, the original background audio volume will be kept unchanged.",
           "maximum": 1
         },
         "pushResultToAzureStorageBlobDirUrl": {
@@ -1037,7 +1037,7 @@
         },
         "use24kPromptAudio": {
           "type": "boolean",
-          "description": "When this parameter is set to true, the service uses a higher-sample-rate 24 kHz prompt audio for voice prompting. If this parameter is not specified or is set to false, the service continues to use 16 kHz prompt audio by default, as it generally provides better overall synthesis quality."
+          "description": "Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. When this parameter is set to true, the service uses a higher sample rate (24 kHz) prompt audio for voice prompting. If this parameter is not specified or is set to false, the service continues to use 16 kHz prompt audio by default, which generally provides better overall synthesis quality."
         }
       }
     },

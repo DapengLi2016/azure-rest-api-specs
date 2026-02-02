@@ -257,7 +257,7 @@ model IterationInput {
   @doc("Number of speakers in the video, if not specified, it will inherit the value defined in the input of translation creation.")
   speakerCount?: int32;
 
-  @doc("Subtitle max display character count per segment, if not specified, it will inherit the value defined in the input of translation creation.")
+  @doc("Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. Subtitle max display character count per segment, if not specified, it will inherit the value defined in the input of translation creation.")
   subtitleMaxCharCountPerSegment?: int32;
 
   @doc("Export subtitle in video, if not specified, it will inherit the value defined in the input of translation creation.")
@@ -296,11 +296,11 @@ model IterationInput {
   subtitleFontSize?: int32;
 
   @added(ApiVersions.v2025_05_20)
-  @doc("This parameter specifies whether to enable emotion for platform voice. By default, the server determines whether to apply emotion based on the target locale to optimize quality. If not specified, the API will automatically decide whether to enable emotional expression on the server side.")
+  @doc("Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. This parameter specifies whether to enable emotion for platform voice. By default, the server determines whether to apply emotion based on the target locale to optimize quality. If not specified, the API will automatically decide whether to enable emotional expression on the server side.")
   enableEmotionalPlatformVoice?: EnableEmotionalPlatformVoice;
 
   @added(ApiVersions.v2026_03_01)
-  @doc("Specify whether to adjust webvtt alignment according to the synthesized audio for the translated text, if not specified, the default value is false.")
+  @doc("Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. Specify whether to adjust webvtt alignment according to the synthesized audio for the translated text, if not specified, the default value is true.")
   adjustWebvttAlignment?: boolean;
 
   @added(ApiVersions.v2026_03_01)
@@ -314,7 +314,7 @@ model IterationInput {
   subtitleVerticalMargin?: int32;
 
   @added(ApiVersions.v2026_03_01)
-  @doc("Adjust the background volume based on the maximum volume with this multiplier factor. The value range is (0, 1], the suggested value is 0.6 if you want to adjust the background volume. If not specified, the original background audio volume will be kept unchanged.")
+  @doc("Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. Adjust the background volume based on the maximum volume with this multiplier factor. The value range is (0, 1], the suggested value is 0.6 if you want to adjust the background volume. If not specified, the original background audio volume will be kept unchanged.")
   @minValueExclusive(0)
   @maxValue(1)
   adjustBackgroundVolumeMultiplier?: float64;
@@ -328,7 +328,7 @@ model IterationInput {
   pushResultToAzureStorageBlobManagedIdentityClientId?: Guid;
 
   @added(ApiVersions.v2026_03_01)
-  @doc("When this parameter is set to true, the service uses a higher-sample-rate 24 kHz prompt audio for voice prompting. If this parameter is not specified or is set to false, the service continues to use 16 kHz prompt audio by default, as it generally provides better overall synthesis quality.")
+  @doc("Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. When this parameter is set to true, the service uses a higher sample rate (24 kHz) prompt audio for voice prompting. If this parameter is not specified or is set to false, the service continues to use 16 kHz prompt audio by default, which generally provides better overall synthesis quality.")
   use24kPromptAudio?: boolean;
 }
 
