@@ -300,7 +300,7 @@ model IterationInput {
   enableEmotionalPlatformVoice?: EnableEmotionalPlatformVoice;
 
   @added(ApiVersions.v2026_03_01)
-  @doc("Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. Specify whether to adjust webvtt alignment according to the synthesized audio for the translated text, if not specified, the default value is true.")
+  @doc("Recommended: Do not set this parameter unless you have specific requirements. The default behavior is optimized for most customers. Specify whether to adjust webvtt alignment according to the synthesized audio for the translated text. If true (default), alignment will be adjusted. If false, alignment will not be adjusted. When not specified, the default value is true (provided as null to the API).")
   adjustWebvttAlignment?: boolean;
 
   @added(ApiVersions.v2026_03_01)
